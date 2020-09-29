@@ -1,0 +1,6 @@
+{% extends 'resume/base.html' %}
+{% block content %}
+    {% for link in links %}
+        <a href="{{ link.address }}">{{ link.text }}</a>
+    {% endfor %}
+{% endblock %}
